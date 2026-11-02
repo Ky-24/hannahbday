@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Birthday Girl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts" id="hearts"></div>
+
+    <main>
+
+        <!-- START SCREEN -->
+        <section class="screen active" id="intro">
+
+            <div class="cake-wrap">
+                <div class="cake">
+
+                    <div class="candles">
+                        <span>🕯️</span>
+                        <span>🕯️</span>
+                        <span>🕯️</span>
+                        <span>🕯️</span>
+                    </div>
+
+                    <div class="cake-top"></div>
+                    <div class="cake-middle"></div>
+                    <div class="cake-bottom"></div>
+
+                </div>
+
+                <div class="cake-shadow"></div>
+            </div>
+
+            <h1 class="intro-title">For My Favorite Person</h1>
+            <p class="intro-subtitle">a little something made with love ♡</p>
+
+            <button class="tiny-button" id="startBtn">
+                I love you ♡
+            </button>
+
+        </section>
+
+
+        <!-- OPENING MESSAGES -->
+        <section class="screen message-screen" id="messages">
+
+            <div class="heart-row">♡ ♡ ♡ ♡ ♡</div>
+
+            <p class="message" id="message"></p>
+
+            <button class="tiny-button hidden" id="continueBtn">
+                LETTERS ♡
+            </button>
+
+            <button class="text-button" id="messageBackBtn">
+                ↶ Back to Start
+            </button>
+
+        </section>
+
+
+        <!-- LOVE LETTERS -->
+        <section class="screen letter-screen" id="lettersScreen">
+
+            <p class="letter-counter" id="counter">
+                01 OF 24
+            </p>
+
+            <article class="letter-card" id="letterCard">
+
+                <div class="card-decoration">♡</div>
+
+                <div class="letter-inner">
+
+                    <p class="letter-to">to my favorite person</p>
+
+                    <h2 id="letterTitle"></h2>
+
+                    <!-- FLEXIBLE PHOTO -->
+                    <div class="photo-frame">
+                        <img
+                            id="memoryPhoto"
+                            src="2.jpeg"
+                            alt="A special memory"
+                        >
+                    </div>
+
+                    <!-- PERSONAL MESSAGE -->
+                    <p class="letter-body" id="letterBody"></p>
+
+                    <!-- BIBLE VERSE -->
+                    <div class="bible-verse">
+
+                        <div class="verse-divider">
+                            <span>✝</span>
+                        </div>
+
+                        <p class="verse-label">
+
+                        </p>
+
+                        <p class="verse-text" id="letterVerse"></p>
+
+                        <p class="verse-reference" id="verseReference"></p>
+
+                    </div>
+
+                    <p class="letter-signature">
+                        with all my love, always ♡
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- NAVIGATION -->
+            <div class="navigation">
+
+                <button class="nav-button" id="previousBtn">
+                    ← back
+                </button>
+
+                <span id="pageNumber">01 / 24</span>
+
+                <button class="nav-button" id="nextBtn">
+                    next →
+                </button>
+
+            </div>
+
+            <button class="tiny-button back-start" id="backStartBtn">
+                ↶ Back to Start
+            </button>
+
+        </section>
+
+
+        <!-- FINAL BIRTHDAY SCREEN -->
+        <section class="screen final-screen" id="finalScreen">
+
+            <h1>Happy 24th Birthday!</h1>
+
+            <p class="final-text">
+                If I could give you one thing in this world,
+                it would be the ability to see yourself through my eyes.
+                Then you would understand how special you truly are.
+            </p>
+
+            <p class="final-text">
+                Thank you for being you. May this year bring you happiness,
+                peace, beautiful memories, and all the love your heart deserves.
+            </p>
+
+
+            <!-- PERSONAL VIDEO -->
+            <div class="video-message">
+
+                <p class="video-label">
+                    ♡ a special message from me ♡
+                </p>
+
+                <div class="video-frame">
+
+                    <video
+                        id="birthdayVideo"
+                        controls
+                        playsinline
+                        preload="metadata"
+                    >
+                        <source src="bananaw.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+
+                </div>
+
+            </div>
+
+
+            <h2 class="final-promise">
+                I love you always my Hannah ♡
+            </h2>
+
+            <button class="tiny-button" id="restartBtn">
+                read the letters again ♡
+            </button>
+
+            <button class="tiny-button back-start" id="backStartFinalBtn">
+                ↶ Back to Start
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        made with love, only for you ♡
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
